@@ -20,11 +20,12 @@ jobs:
         echo "Hello ${{ github.event.inputs.name }}!"
         git clone git@github.com:Netflix/conductor.git
         ls -lrthS
-    - name: CHECKOUT NETFLIX CONDUCTOR
-        uses: actions/checkout@master
-        with:
-          repository: Netflix/conductor
-          token: ${{ secrets.PAT }}
+        
+    uses: actions/checkout@master
+    with:
+        repository: Netflix/conductor
+        token: ${{ secrets.PAT }}
+        
     - run: |
         echo "CHECK AGAIN!"
         ls -lrthS
