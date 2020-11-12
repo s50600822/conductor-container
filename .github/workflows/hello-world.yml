@@ -21,10 +21,10 @@ jobs:
         git clone git@github.com:Netflix/conductor.git
         ls -lrthS
         
-    uses: actions/checkout@master
-    with:
-        repository: Netflix/conductor
-        token: ${{ secrets.PAT }}
+    # uses: actions/checkout@master
+    # with:
+    #     repository: Netflix/conductor
+    #     token: ${{ secrets.PAT }}
         
     - run: |
         echo "CHECK AGAIN!"
