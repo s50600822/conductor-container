@@ -13,7 +13,7 @@ jobs:
         ls -lrthS
 
     - name: GET FROM NETFLIX
-      uses: actions/checkout@main
+      uses: actions/checkout@v3
       with:
         # repository: Netflix/conductor
         repository: s50600822/conductor
